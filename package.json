@@ -1,0 +1,47 @@
+{
+  "name": "eslint-config-churchie317",
+  "version": "0.0.0-semantically-released",
+  "description": "eslint configuration settings for churchie317",
+  "main": "src/index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "echo \"Error: no test specified\"",
+    "lint": "eslint .",
+    "release": "semantic-release pre && npm publish && semantic-release post",
+    "test": "npm-run-all --parallel lint find-new-rules",
+    "eslint-find-option-rules": "eslint-find-rules --all-available --no-error"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/churchie317/eslint-config-churchie317.git"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "churchie317"
+  ],
+  "author": "Eric Churchill",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/churchie317/eslint-config-churchie317/issues"
+  },
+  "homepage": "https://github.com/churchie317/eslint-config-churchie317#readme",
+  "devDependencies": {
+    "commitizen": "^2.9.2",
+    "cz-conventional-changelog": "^1.2.0",
+    "eslint": "^3.12.2",
+    "eslint-find-rules": "^1.14.3",
+    "ghooks": "^2.0.0",
+    "semantic-release": "^6.3.2",
+    "validate-commit-message": "^3.0.1",
+    "validate-commit-msg": "^2.8.2"
+  },
+  "dependencies": {
+    "npm": "^4.0.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
