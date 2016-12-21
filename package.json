@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "commit": "git-cz",
-    "test": "npm-run-all --parallel lint eslint-find-rules",
+    "test": "npm-run-all --parallel lint eslint-find-option-rules",
     "lint": "eslint .",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "eslint-find-option-rules": "eslint-find-rules --all-available --no-error"
