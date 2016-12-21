@@ -5,10 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "commit": "git-cz",
-    "test": "echo \"Error: no test specified\"",
-    "lint": "eslint .",
-    "release": "semantic-release pre && npm publish && semantic-release post",
     "test": "npm-run-all --parallel lint find-new-rules",
+    "lint": "eslint .",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "eslint-find-option-rules": "eslint-find-rules --all-available --no-error"
   },
   "repository": {
@@ -32,11 +31,14 @@
     "eslint": "^3.12.2",
     "eslint-find-rules": "^1.14.3",
     "ghooks": "^2.0.0",
+    "npm-run-all": "^3.1.2",
     "semantic-release": "^6.3.2",
     "validate-commit-message": "^3.0.1",
     "validate-commit-msg": "^2.8.2"
   },
   "dependencies": {
+    "babel-plugin-module-resolver": "^2.4.0",
+    "eslint-import-resolver-babel-module": "^2.2.1",
     "npm": "^4.0.5"
   },
   "config": {
