@@ -3,6 +3,11 @@ module.exports = {
     browser: true,
     node: true,
   },
-  extends: [],
+  extends: [
+    './best-practices.js',
+    './stylistic.js',
+    './import/index.js',
+    './es6/index.js',
+  ],
   rules: {},
 }
